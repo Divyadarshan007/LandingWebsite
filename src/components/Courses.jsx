@@ -43,7 +43,7 @@ const Courses = () => {
                                 <button className="btn border-2 border-dark px-5 py-3 fw-bold">Explore Courses</button>
                             </div>
 
-                            <div className="row pt-5 gy-4">
+                            <div className="row mt-4 gy-4">
                                {cardContent.map((item, idx)=>{
                                     return <SmallCard key={idx} icon={item.icon} title={item.title} desc={item.desc} />
                                })}

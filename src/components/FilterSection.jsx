@@ -1,3 +1,5 @@
+import CourseCard from "./CourseCard"
+
 const FilterSection = () => {
     return (
         <section className="py-5 mt-5">
@@ -13,6 +15,10 @@ const FilterSection = () => {
                     <li className="px-3 d-flex align-items-center gap-2"><i class="fa-solid fa-lightbulb"></i>Marketing</li>
                     <li className="px-3 d-flex align-items-center gap-2"><i class="fa-solid fa-palette"></i>Design</li>
                 </ul>
+
+                <div className="row mt-5">
+                    <CourseCard />
+                </div>
             </div>
         </section>
     )

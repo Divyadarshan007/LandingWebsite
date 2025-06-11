@@ -1,6 +1,26 @@
 import CourseCard from "./CourseCard"
 
 const FilterSection = () => {
+    let CourseCardArr = [
+        {
+            image: "/public/images/course_image_1.jpg",
+            field: "COMPUTER SCIENCE",
+            price: "29.99",
+            desc: "Programming for everybody (Getting started with python)",
+        },
+        {
+            image: "/public/images/course_image_2.jpg",
+            field: "PHOTOGRAPHY",
+            price: "9.99",
+            desc: "Photography Masterclass: A Complete Guide to Photography",
+        },
+        {
+            image: "/public/images/course_image_3.jpg",
+            field: "BUSINESS",
+            price: "Free",
+            desc: "Project Management Principles and Practices",
+        },
+    ]
     return (
         <section className="py-5 mt-5">
             <div className="container">
@@ -17,7 +37,9 @@ const FilterSection = () => {
                 </ul>
 
                 <div className="row mt-5">
-                    <CourseCard />
+                    {CourseCardArr.map((item)=>{
+                        return <CourseCard image={item.image} field={item.field} price={item.price} desc={item.desc} />
+                    })}
                 </div>
             </div>
         </section>

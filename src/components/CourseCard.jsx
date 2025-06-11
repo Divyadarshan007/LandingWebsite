@@ -1,15 +1,15 @@
-const CourseCard = () => {
+const CourseCard = ({image, field, price, desc}) => {
     return (
         <div className="col-4">
             <div className="courseCard">
                 <div className="courseCardImg">
-                    <img src="/public/images/course_image_1.jpg" width={'100%'} alt="" />
+                    <img src={image} width={'100%'} alt="" />
                 </div>
                 <div className="py-4">
                     <div className="d-flex">
-                        <h4 className="bg-secondary px-3 py-1 text-white">COMPUTER SCIENCE</h4>
+                        <h4 className="px-3 py-1">{field}</h4>
                         <span>
-                            $29.99
+                            ${price}
                         </span>
                     </div>
                     <div>
@@ -17,7 +17,7 @@ const CourseCard = () => {
                         <span>120 Hours</span>
                         <span>3.5 (3k Reviews)</span>
                     </div>
-                    <p>Programming for everybody (Getting started with python)</p>
+                    <p>{desc}</p>
                     <div>
                         <a href="">View Course</a>
                         <span><i className="fa-solid fa-arrow-right"></i></span>

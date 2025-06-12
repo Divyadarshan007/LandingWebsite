@@ -1,24 +1,25 @@
-import SmallCard from "./SmallCard"
+import { FaAndroid } from "react-icons/fa";
+import SmallCard from "./SmallCard";
 
 const Courses = () => {
     let cardContent = [
         {
-            icon:"/public/images/icon_academic_cap.svg",
+            icon:"/public/images/course_image_1.jpg",
             title:"Knowlwdge",
             desc:"Duis aute irure dolor in repreh in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
         },
         {
-            icon:"/public/images/icon_physics.svg",
+            icon:"/public/images/course_image_2.jpg",
             title:"Unlimited access",
             desc:"Libero nunc consequat interd varius sit amet mattis vulpute enim liquet sagittis"
         },
         {
-            icon:"/public/images/icon_communication.svg",
+            icon:"/public/images/course_image_3.jpg",
             title:"Practical Skills",
             desc:"Vulputate enim nulla aliquet porttitor lacus luctus accums. Cras sed felis eget velit"
         },
         {
-            icon:"/public/images/icon_diploma.svg",
+            icon:"/public/images/course_image_4.jpg",
             title:"A cerificate",
             desc:"Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt"
         },

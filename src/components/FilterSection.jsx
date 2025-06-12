@@ -29,16 +29,16 @@ const FilterSection = () => {
                     <p className="text-16 text-end w-35">Dignissim enim sit amet venenatis urna cursus eget nunc. Egestas sed sed risus pretium quam vulputate</p>
                 </div>
                 <ul className="d-flex m-0 p-0 gap-4 filterMenu">
-                    <li className="px-3 active d-flex align-items-center gap-2"><i class="fa-solid fa-people-group"></i>Hr</li>
-                    <li className="px-3 d-flex align-items-center gap-2"><i class="fa-solid fa-camera"></i>Photography</li>
-                    <li className="px-3 d-flex align-items-center gap-2"><i class="fa-solid fa-network-wired"></i>Programming</li>
-                    <li className="px-3 d-flex align-items-center gap-2"><i class="fa-solid fa-lightbulb"></i>Marketing</li>
-                    <li className="px-3 d-flex align-items-center gap-2"><i class="fa-solid fa-palette"></i>Design</li>
+                    <li className="px-3 active d-flex align-items-center gap-2"><i className="fa-solid fa-people-group"></i>Hr</li>
+                    <li className="px-3 d-flex align-items-center gap-2"><i className="fa-solid fa-camera"></i>Photography</li>
+                    <li className="px-3 d-flex align-items-center gap-2"><i className="fa-solid fa-network-wired"></i>Programming</li>
+                    <li className="px-3 d-flex align-items-center gap-2"><i className="fa-solid fa-lightbulb"></i>Marketing</li>
+                    <li className="px-3 d-flex align-items-center gap-2"><i className="fa-solid fa-palette"></i>Design</li>
                 </ul>
 
                 <div className="row mt-5">
-                    {CourseCardArr.map((item)=>{
-                        return <CourseCard image={item.image} field={item.field} price={item.price} desc={item.desc} />
+                    {CourseCardArr.map((item, idx)=>{
+                        return <CourseCard key={idx} image={item.image} field={item.field} price={item.price} desc={item.desc} />
                     })}
                 </div>
             </div>

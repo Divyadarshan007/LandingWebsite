@@ -196,3 +196,84 @@
   transform: translate(-2px, -2px);
   box-shadow: 10px 10px 0 0 #1f1d0d;
 }
+
+.image-widget {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: -20px 20px 0 0 #ffd32b;
+}
+
+.info_list i {
+  float: left;
+  font-size: 12px;
+  margin: 5px 10px 0 0;
+  color: #f7ff62;
+  text-shadow: 2px 2px 0 #1f1d0d;
+}
+.price-card .btn_wrap {
+    padding: 38px 0;
+}
+.price-card .btn {
+    width: 100%;
+    display: block;
+}
+.btn.border_dark{
+    color: #1f1d0d;
+    border-color: #1f1d0d;
+}
+.btn span {
+    position: relative;
+    display: inline-block;
+    transition: .4s cubic-bezier(.25,1,.5,1);
+}
+.btn span small {
+    display: block;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    transition: .4s cubic-bezier(.25,1,.5,1);
+}
+.btn.border_dark:hover {
+    color: #fff;
+    background-color: #1f1d0d;
+}
+.btn:hover {
+    z-index: 1;
+    color: #fff;
+    box-shadow: 0 8px 24px 0 rgba(16, 18, 19, .4);
+}
+
+.btn.border_dark:hover span small {
+    color: #fff;
+}
+
+.btn:hover span small:nth-child(1) {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.btn:hover span small:nth-child(2) {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+.btn span small:nth-child(2) {
+    left: 50%;
+    top: 100%;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.btn {
+    border: none;
+    line-height: 1;
+    padding: 0 40px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    transition: 0.4s cubic-bezier(.25,1,.5,1);
+    border: 2px solid transparent;
+    border-radius: 8px;
+}

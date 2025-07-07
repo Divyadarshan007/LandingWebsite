@@ -4,22 +4,22 @@ import SmallCard from "./SmallCard";
 const Courses = () => {
     let cardContent = [
         {
-            icon:"/public/images/course_image_1.jpg",
+            icon:"/images/icon_academic_cap.svg",
             title:"Knowlwdge",
             desc:"Duis aute irure dolor in repreh in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
         },
         {
-            icon:"/public/images/course_image_2.jpg",
+            icon:"/images/icon_physics.svg",
             title:"Unlimited access",
             desc:"Libero nunc consequat interd varius sit amet mattis vulpute enim liquet sagittis"
         },
         {
-            icon:"/public/images/course_image_3.jpg",
+            icon:"images/icon_communication.svg",
             title:"Practical Skills",
             desc:"Vulputate enim nulla aliquet porttitor lacus luctus accums. Cras sed felis eget velit"
         },
         {
-            icon:"/public/images/course_image_4.jpg",
+            icon:"/images/icon_diploma.svg",
             title:"A cerificate",
             desc:"Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt"
         },
@@ -41,7 +41,7 @@ const Courses = () => {
                     <div className="col-6">
                         <div>
                             <div className="d-flex justify-content-end">
-                                <button className="btn border-2 border-dark px-5 py-3 fw-bold">Explore Courses</button>
+                                <a class="btn border_dark" href="course.html"><span><small>Explore Courses</small> <small>Explore Courses</small></span></a>
                             </div>
 
                             <div className="row mt-4 gy-4">

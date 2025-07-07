@@ -20,14 +20,14 @@ const PriceSection = () => {
         },
     ]
     return (
-        <section>
+        <section className="py-6  bg-f6">
             <div className="container">
-                <div>
+                <div className="pricing-heading">
                     <h3>Premium Price Packages</h3>
                 </div>
                 <div className="row">
-                    {priceCard.map((card)=>{
-                        return <PriceCard plan={card.plan} price={card.price} validity={card.validity}/>
+                    {priceCard.map((card,idx)=>{
+                        return <PriceCard plan={card.plan} price={card.price} validity={card.validity} idx={idx}/>
                     })}
                 </div>
             </div>

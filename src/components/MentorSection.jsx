@@ -2,13 +2,13 @@ const MentorSection = () => {
     return (
         <section className="py-5">
             <div className="container">
-                <div className="row">
-                    <div className="col-6">
+                <div className="row gy-5">
+                    <div className="col-lg-6 col-12">
                         <div className="image-widget">
-                            <img src="/public/images/about_image_2.jpg" width={'100%'} alt="" />
+                            <img src="/images/about_image_2.jpg" width={'100%'} alt="" />
                         </div>
                     </div>
-                    <div className="col-6 ps-4">
+                    <div className="col-lg-6 col-12 ps-4">
                         <div className="mentor-content">
                             <h3>Supporting Student Learning in Your Course</h3>
                             <p>Rutrum tellus pellentesque eu tincidunt. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Sit amet porttitor eget dolor morbi</p>

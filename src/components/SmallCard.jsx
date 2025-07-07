@@ -2,7 +2,7 @@
 const SmallCard = ({icon, title, desc }) => {
 
     return (
-        <div className="col-6">
+        <div className="col-md-6 col-12">
             <div className="small-card  p-4 shadow rounded-2">
                 <div className="card-icon mb-3">
                     <img src={icon} alt="" width={'70%'}/>

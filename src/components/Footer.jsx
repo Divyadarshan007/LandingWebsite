@@ -2,8 +2,8 @@ const Footer = () => {
     return (
         <footer className="py-6">
             <div className="container">
-                <div className="row">
-                    <div className="col-3">
+                <div className="row gy-4">
+                    <div className="col-lg-3 col-12">
                         <div className="mb-4">
                             <img src="/images/site_logo_2.svg" width="50%" alt="" />
                         </div>
@@ -15,7 +15,7 @@ const Footer = () => {
                             <span><i className="fa-brands fa-linkedin"></i></span>
                         </div>
                     </div>
-                    <div className="col-2">
+                    <div className="col-lg-2 col-sm-4 col-12">
                         <div>
                             <h3>Links</h3>
                             <ul className="m-0 p-0">
@@ -27,7 +27,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-2">
+                    <div className="col-lg-2 col-sm-4 col-12">
                         <div>
                             <h3>Class</h3>
                             <ul className="m-0 p-0">
@@ -39,7 +39,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-2">
+                    <div className="col-lg-2 col-sm-4 col-12">
                         <div>
                             <h3>Support</h3>
                             <ul className="m-0 p-0">
@@ -51,10 +51,10 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-3">
+                    <div className="col-lg-3 col-12">
                         <div>
                             <h3>Latest Posts</h3>
-                            <div className="d-flex align-items-center gap-3">
+                            <div className="d-flex align-items-center  pb-lg-2 pb-4 gap-3">
                                 <div className="width-100">
                                     <img src="/images/blog_small_img_1.jpg" alt="" />
                                 </div>

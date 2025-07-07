@@ -9,15 +9,15 @@ const Testimonial = () => {
     let sliderContent = [
         {
             name: "Mathew Lina",
-            image: "/public/images/testimonial_img_1.jpg",
+            image: "/images/testimonial_img_1.jpg",
         },
         {
             name: "Nahia Colunga",
-            image: "/public/images/testimonial_img_2.jpg",
+            image: "/images/testimonial_img_2.jpg",
         },
         {
             name: "Mathew Lina",
-            image: "/public/images/testimonial_img_1.jpg",
+            image: "/images/testimonial_img_1.jpg",
         },
     ]
     return (
@@ -35,18 +35,29 @@ const Testimonial = () => {
                             delay: 2000,
                             disableOnInteraction: true,
                         }}
+                        breakpoints={{
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                            },
+                            992: {
+                                slidesPerView: 2,
+                                spaceBetween: 40,
+                            },
+                            
+                        }}
                         loop={true}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}>
                         {sliderContent.map((nothing) => {
                             return <SwiperSlide>
-                                <div className='row slider-card'>
-                                    <div className='col-4'>
+                                <div className='row gy-4 slider-card'>
+                                    <div className='col-sm-4 col-12'>
                                         <div className='rounded-3 overflow-hidden'>
                                             <img src={nothing.image} width={'100%'} alt="" />
                                         </div>
                                     </div>
-                                    <div className='col-8'>
+                                    <div className='col-sm-8 col-12'>
                                         <div className='slider-content'>
                                             <div className='text-warning'>
                                                 <span className='fs-6'><i className='fa-solid fa-star'></i></span>
@@ -63,8 +74,6 @@ const Testimonial = () => {
                                 </div>
                             </SwiperSlide>
                         })}
-
-
                     </Swiper>
                 </div>
             </div>

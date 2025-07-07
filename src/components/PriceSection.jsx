@@ -25,7 +25,7 @@ const PriceSection = () => {
                 <div className="pricing-heading">
                     <h3>Premium Price Packages</h3>
                 </div>
-                <div className="row">
+                <div className="row gy-4">
                     {priceCard.map((card,idx)=>{
                         return <PriceCard plan={card.plan} price={card.price} validity={card.validity} idx={idx}/>
                     })}

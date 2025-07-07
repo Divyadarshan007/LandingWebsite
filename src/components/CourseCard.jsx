@@ -1,6 +1,6 @@
 const CourseCard = ({image, field, price, desc}) => {
     return (
-        <div className="col-4">
+        <div className="col-lg-4 col-12">
             <div className="courseCard">
                 <div className="courseCardImg">
                     <img src={image} width={'100%'} alt="" />
@@ -13,9 +13,9 @@ const CourseCard = ({image, field, price, desc}) => {
                         </span>
                     </div>
                       <div className="d-flex align-items-center gap-2 catag">
-                        <span className="d-flex align-items-center gap-1"><i class="fa-solid fa-chart-simple text-warning"></i>Beginner</span>
-                        <span className="d-flex align-items-center gap-1"><i class="fa-solid fa-clock text-warning"></i>120 Hours</span>
-                        <span className="d-flex align-items-center gap-1"><i class="fa-solid fa-star text-warning"></i>3.5 (3k Reviews)</span>
+                        <span className="d-flex align-items-center gap-1"><i className="fa-solid fa-chart-simple text-warning"></i>Beginner</span>
+                        <span className="d-flex align-items-center gap-1"><i className="fa-solid fa-clock text-warning"></i>120 Hours</span>
+                        <span className="d-flex align-items-center gap-1"><i className="fa-solid fa-star text-warning"></i>3.5 (3k Reviews)</span>
                     </div>
                     <p>{desc}</p>
                     <div className="view-btn d-flex gap-2 align-items-center">

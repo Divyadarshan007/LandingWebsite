@@ -1,6 +1,6 @@
 const PriceCard = ({ plan, validity, price, idx }) => {
     return (
-        <div className="col-4">
+        <div className="col-lg-4 col-12">
             <div className={`price-card ${idx % 2 != 0 ? "bg-dark" : "mt-3"}`}>
                 <h3>{plan}</h3>
                 <p><sup>$</sup>{price}</p>

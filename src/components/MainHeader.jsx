@@ -11,7 +11,7 @@ const MainHeader = () => {
                         <span >Collab</span>
                     </div>
                     <ul className="d-xl-flex d-none menus gap-4 m-0 p-0">
-                        <li><a className="fs-5 fw-medium" href="">Home</a></li>
+                        <li><a className="fs-5 active fw-medium" href="">Home</a></li>
                         <li><a className="fs-5 fw-medium" href="">Courses</a></li>
                         <li><a className="fs-5 fw-medium" href="">Pages</a></li>
                         <li><a className="fs-5 fw-medium" href="">Blog</a></li>

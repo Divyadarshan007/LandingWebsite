@@ -7,7 +7,7 @@ const Footer = () => {
                         <div className="mb-4">
                             <img src="/images/site_logo_2.svg" width="50%" alt="" />
                         </div>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <p className="text-secondary">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                         <div className="social-links">
                             <span><i className="fa-brands fa-facebook"></i></span>
                             <span><i className="fa-brands fa-youtube"></i></span>
